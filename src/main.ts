@@ -1,11 +1,6 @@
-
-let totalSlices : number = 8; 
-let numberOfPeople : number = 4; 
-let slicesEach : number = 8; 
-if (numberOfPeople*slicesEach<=totalSlices)
+let numbers : Array<number>;
+numbers = [2,5,6];
+for (let i=0; i < numbers.length; i++)
 {
-    console.log("(" + totalSlices +","+ numberOfPeople +","+ slicesEach + ")" + " It is true ");
-}
-else {
-    console.log("(" + totalSlices +","+ numberOfPeople +","+ slicesEach + ")" + " It is false ");
+    console.log(numbers[i]*numbers.length);
 }
