@@ -1,25 +1,25 @@
 
-   
-   function getPosition(elementToFind, arrayElements) {
-    var i;
-    for (i = 0; i < arrayElements.length; i += 1) {
-        if (arrayElements[i] === elementToFind) {
-            return i;
-        }
+var array = [5, 9, 45, 67, 3, 5, 0, 2,44, 8, 26, 903];
+var even = 0;
+var odd = 0;
+
+for(let i = 0; i < array.length; i++){
+
+    if(array[i] %2 == 0){
+        even += array[i];
     }
-    return null; //not found
-}let  numbers: number[] =  [10, 52, 14, 98];
-   let  smallest :number = numbers[0];
-   let  largest: number = numbers[0];
+    else{
+        odd += array[i];
+    }
+}
 
-     for(let i=1; i< numbers.length; i++)
-     {
-         if(numbers[i] > largest)
-             largest = numbers[i];
-         else if (numbers[i] < smallest)
-             smallest = numbers[i];
-
-     }
-     console.log("Smallest Number is : " + smallest);
-     console.log("Largest Number is : " + largest);
- 
+if(even > odd){
+    console.log("Even > Odd");
+    var a = even - odd;
+    console.log(a);
+}
+else{
+    console.log("Odd > Even");
+    var b = odd - even;
+    console.log(b);
+}
